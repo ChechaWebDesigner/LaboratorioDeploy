@@ -25,7 +25,7 @@ if(process.env.FRONTEND_URL){
 //endpoint de bienvenida
 app.get("/", (req, res) => {
     res.json({
-        mensaje: "Bienvenido a la API, version 2",
+        mensaje: "Bienvenido a la API, version 3 (laboratorio)",
         entorno: NODE_ENV
     });
 });
@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
 app.get("/health", (req, res) => {
     res.status(200).json({
         status: "ok",
-        servicio: "API Desarrollo Web",
+        servicio: "API Desarrollo Web Laboratorio Cesar",
         timestamp: new Date().toISOString()
     });
 });
